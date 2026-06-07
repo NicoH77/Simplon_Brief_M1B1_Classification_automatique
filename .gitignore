@@ -1,6 +1,80 @@
-m1b1_env
-__pycache__
-.pytest_cache
-.ipynb_checkpoints
-distilbert_banking77_lora
-results_lora_distilbert
+# =========================================================
+# 1. MODELES / CHECKPOINTS (CRITIQUE)
+# =========================================================
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+checkpoints/
+results/
+outputs/
+models/
+runs/
+m1b1_env/
+
+# HuggingFace / LoRA
+distilbert_banking77_lora/
+results_lora_distilbert/
+
+# =========================================================
+# 2. DATASETS (NEVER VERSIONNE)
+# =========================================================
+data/
+datasets/
+# *.csv
+*.tsv
+*.json
+*.parquet
+*.h5
+*.pkl
+*.pickle
+
+# =========================================================
+# 3. LOGS / TRACKING (MLflow, WandB...)
+# =========================================================
+mlruns/
+wandb/
+logs/
+*.log
+
+# =========================================================
+# 4. NOTEBOOKS & TEMP
+# =========================================================
+.ipynb_checkpoints/
+*.tmp
+*.temp
+
+# =========================================================
+# 5. PYTHON (STANDARD)
+# =========================================================
+__pycache__/
+*.pyc
+*.pyo
+
+# environnements
+env/
+venv/
+.venv/
+conda-env/
+
+# packaging
+build/
+dist/
+*.egg-info/
+
+# =========================================================
+# 6. IDE / OS
+# =========================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================================================
+# 7. SECRETS (CRITIQUE)
+# =========================================================
+.env
+.env.*
+!.env.example
